@@ -34,14 +34,40 @@ Access your sandbox and:
 - Change your working directory to `/root`
 - Then, create an empty file `so_cool`
 ```
-guillaume@ubuntu:~/$ cd /root
-guillaume@ubuntu:~/$ touch so_cool
+root@a710280214ff:/# cd /root
+root@a710280214ff:~# touch so_cool
+root@a710280214ff:~# ls
+empty_directory  not_here  old_school  ready_to_be_removed  school  so_cool
+root@a710280214ff:~# pwd
+/root
+root@a710280214ff:~#
 ```
 
 **Advices:**
 
 - Don’t forget to validate your current working directory
 - Don’t forget to display the list of files of your current directory to validate the creation of the new file
+
+### 1. More of me
+
+Access your sandbox and:
+
+- Change your working directory to `/root`
+- Then, copy the file school to `/tmp`
+
+**Advices:**
+
+- Don’t forget to validate your current working directory
+- Don’t forget to display the list of files of your current directory to validate the copy of the file
+```
+root@a710280214ff:~# cd /root
+root@a710280214ff:~# cp so_cool /tmp/
+root@a710280214ff:~# ls /tmp/
+so_cool  tmp.DAOEzJT0J6  tmp.dOKjikw0Ig  tmpztrs6ymg
+root@a710280214ff:~# 
+```
+
+
 
 
 
