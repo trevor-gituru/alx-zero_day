@@ -131,7 +131,50 @@ Make sure you include a not empty `README.md` in your directory:
 
 **And important part:** Make sure your commit and push your code to Github - otherwise the Checker will always fail.
 
-### 
+### 2. Coding fury road
+
+For the moment we have an empty project directory containing only a `README.md`. It’s time to code!
+
+- Create these directories at the root of your project: `bash`, `c`, `js`
+- Create these empty files:
+    + `c/c_is_fun.c`
+    + `js/main.js`
+    + `js/index.js`
+- Create a file `bash/alx` with these two lines inside: `#!/bin/bash` and echo "ALX"
+- Create a file `bash/school` with these two lines inside: `#!/bin/bash` and `echo "School"`
+- Add all these new files to git
+- Commit your changes (message: “Starting to code today, so cool”) and push to the remote server
+```bash
+root@a710280214ff:~# cd ~/alx-zero_day/*03*
+root@a710280214ff:~/alx-zero_day/0x03-git# mkdir bash c js
+root@a710280214ff:~/alx-zero_day/0x03-git# touch c/c_is_fun.c js/index.js js/main.js
+root@a710280214ff:~/alx-zero_day/0x03-git# echo -e '#!/bin/bash\necho "ALX"' > bash/alx
+root@a710280214ff:~/alx-zero_day/0x03-git# echo -e '#!/bin/bash\necho "School"' > bash/school
+root@a710280214ff:~/alx-zero_day/0x03-git# git add .
+root@a710280214ff:~/alx-zero_day/0x03-git# git commit -m "Starting to code today, so cool"
+[master a3aca55] Starting to code today, so cool
+ 5 files changed, 4 insertions(+)
+ create mode 100644 0x03-git/bash/alx
+ create mode 100644 0x03-git/bash/school
+ create mode 100644 0x03-git/c/c_is_fun.c
+ create mode 100644 0x03-git/js/index.js
+ create mode 100644 0x03-git/js/main.js
+root@a710280214ff:~/alx-zero_day/0x03-git# git push
+Username for 'https://github.com': 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
+Password for 'https://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@github.com': 
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 652 bytes | 130.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/trevor-gituru/alx-zero_day.git
+   fde2b38..a3aca55  master -> master
+
+```
+
+ 
 ### 
 ### 
 ### 
