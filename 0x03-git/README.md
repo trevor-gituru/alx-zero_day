@@ -171,11 +171,90 @@ Total 9 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/trevor-gituru/alx-zero_day.git
    fde2b38..a3aca55  master -> master
+```
+ 
+### 3. Collaboration is the base of a company
 
+A branch is like a copy of your project. It’s used mainly for:
+
+- adding a feature in development
+- collaborating on the same project with other developers
+- not breaking your entire repository
+- not upsetting your co-workers
+
+The purpose of a branch is to isolate your work from the main code base of your project and/or from your co-workers’ work.
+
+For this project, create a branch `update_script` and in this branch:
+
+- Create an empty file named `bash/98`
+- Update `bash/alx` by replacing `echo "ALX"` with `echo "ALX School"`
+- Update `bash/school` by replacing `echo "School"` with `echo "The school is open!"`
+- Add and commit these changes (message: “My personal work”)
+- Push this new branch [ Tips ](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository)
+
+Perfect! You did an amazing update in your project and it’s isolated correctly from the **main** branch.
+
+Ho wait, your manager needs a quick fix in your project and it needs to be deployed now:
+
+- Change branch to `main`
+- Update the file `bash/alx` by replacing `echo "ALX"` with `echo "ALX School is so cool!"`
+- Delete the directory `js`
+- Commit your changes (message: “Hot fix”) and push to the origin
+
+Ouf, hot fix is done
+```bash
+root@a710280214ff:~/alx-zero_day/0x03-git# git checkout -b update_script
+Switched to a new branch 'update_script'
+root@a710280214ff:~/alx-zero_day/0x03-git# touch bash/98
+root@a710280214ff:~/alx-zero_day/0x03-git# sed -i 's/ALX/ALX School/' bash/alx 
+root@a710280214ff:~/alx-zero_day/0x03-git# sed -i 's/School/The school is open!/' bash/school
+root@a710280214ff:~/alx-zero_day/0x03-git# git add .
+root@a710280214ff:~/alx-zero_day/0x03-git# git commit -m "My personal work"
+[update_script d0d7924] My personal work
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+ create mode 100644 0x03-git/bash/98
+root@a710280214ff:~/alx-zero_day/0x03-git# git push origin update_script
+Username for 'https://github.com': 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
+Password for 'https://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@github.com': 
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 504 bytes | 504.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'update_script' on GitHub by visiting:
+remote:      https://github.com/trevor-gituru/alx-zero_day/pull/new/update_script
+remote: 
+To https://github.com/trevor-gituru/alx-zero_day.git
+ * [new branch]      update_script -> update_script
+root@a710280214ff:~/alx-zero_day/0x03-git# git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+root@a710280214ff:~/alx-zero_day/0x03-git# sed -i 's/ALX/ALX School is so cool!/' bash/alx 
+root@a710280214ff:~/alx-zero_day/0x03-git# rm -r js/
+root@a710280214ff:~/alx-zero_day/0x03-git# git add .
+root@a710280214ff:~/alx-zero_day/0x03-git# git commit -m "Hot fix"
+[master e82d469] Hot fix
+ 3 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 100644 0x03-git/js/index.js
+ delete mode 100644 0x03-git/js/main.js
+root@a710280214ff:~/alx-zero_day/0x03-git# git push
+Username for 'https://github.com': trevor-gituru
+Password for 'https://trevor-gituru@github.com': 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 439 bytes | 439.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/trevor-gituru/alx-zero_day.git
+   a3aca55..e82d469  master -> master
+root@a710280214ff:~/alx-zero_day/0x03-git#
 ```
 
- 
-### 
 ### 
 ### 
 ### 
