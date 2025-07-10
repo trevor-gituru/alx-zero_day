@@ -131,6 +131,24 @@ empty_directory  new_school  school  school_is_amazing  so_cool
 root@a710280214ff:~# 
 ```
 
+### 6. No need
+
+Access your sandbox and:
+
+- Change your working directory to `/root`
+- Then, remove the directory `empty_directory`
+
+```
+root@a710280214ff:~# cd /root/
+root@a710280214ff:~# ls
+empty_directory  new_school  school  school_is_amazing  so_cool
+root@a710280214ff:~# rm -r empty_directory/
+root@a710280214ff:~# ls
+new_school  school  school_is_amazing  so_cool
+root@a710280214ff:~# 
+```
+
+
 
 
 
