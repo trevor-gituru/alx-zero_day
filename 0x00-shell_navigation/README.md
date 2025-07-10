@@ -81,6 +81,23 @@ empty_directory  new_school  not_here  ready_to_be_removed  school  so_cool
 root@a710280214ff:~#
 ```
 
+### 3. Not here
+
+Access your sandbox and:
+
+- Change your working directory to `/root`
+- Then, move the file `not_here` to `/tmp/right_school`
+
+```
+root@a710280214ff:~# cd /root
+root@a710280214ff:~# ls
+empty_directory  new_school  not_here  ready_to_be_removed  school  so_cool
+root@a710280214ff:~# mv not_here /tmp/right_school
+root@a710280214ff:~# ls /tmp/
+right_school  so_cool  tmp.DAOEzJT0J6  tmp.dOKjikw0Ig  tmpztrs6ymg
+root@a710280214ff:~#
+```
+
 
 ## Resources
 - [Linux navigation](https://linuxcommand.org/lc3_lts0020.php)
