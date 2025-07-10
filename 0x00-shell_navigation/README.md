@@ -98,6 +98,23 @@ right_school  so_cool  tmp.DAOEzJT0J6  tmp.dOKjikw0Ig  tmpztrs6ymg
 root@a710280214ff:~#
 ```
 
+### 4. Not anymore
+
+Access your sandbox and:
+
+- Change your working directory to `/root`
+- Then, delete the file `ready_to_be_removed`
+```
+root@a710280214ff:~# cd /root
+root@a710280214ff:~# ls
+empty_directory  new_school  ready_to_be_removed  school  so_cool
+root@a710280214ff:~# rm ready_to_be_removed 
+root@a710280214ff:~# ls
+empty_directory  new_school  school  so_cool
+root@a710280214ff:~# 
+```
+
+
 
 ## Resources
 - [Linux navigation](https://linuxcommand.org/lc3_lts0020.php)
