@@ -114,6 +114,24 @@ empty_directory  new_school  school  so_cool
 root@a710280214ff:~# 
 ```
 
+### 5. Organization is key!
+
+Access your sandbox and:
+
+- Change your working directory to `/root`
+- Then, create a directory `school_is_amazing`
+
+```
+root@a710280214ff:~# cd /root
+root@a710280214ff:~# ls
+empty_directory  new_school  school  so_cool
+root@a710280214ff:~# mkdir school_is_amazing
+root@a710280214ff:~# ls
+empty_directory  new_school  school  school_is_amazing  so_cool
+root@a710280214ff:~# 
+```
+
+
 
 
 ## Resources
