@@ -267,10 +267,71 @@ After you have done that, in your terminal:
 - Create a new file `up_to_date` at the root of your directory and in it, write the git command line used
 - Add `up_to_date` to git, commit (message: “How to be up to date in git”), and push to the origin
 ```bash
-
+root@a710280214ff:~/alx-zero_day/0x03-git# git pull origin master
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1024 bytes | 1024.00 KiB/s, done.
+From https://github.com/trevor-gituru/alx-zero_day
+ * branch            master     -> FETCH_HEAD
+   e82d469..e4c442d  master     -> origin/master
+Updating e82d469..e4c442d
+Fast-forward
+ 0x03-git/README.md | 1 +
+ 1 file changed, 1 insertion(+)
+root@a710280214ff:~/alx-zero_day/0x03-git# echo "git pull origin master" > up_to_date
+root@a710280214ff:~/alx-zero_day/0x03-git# git add .
+root@a710280214ff:~/alx-zero_day/0x03-git# git commit -m "How to be up to date in git"
+[master ed88df0] How to be up to date in git
+ 1 file changed, 1 insertion(+)
+ create mode 100644 0x03-git/up_to_date
+root@a710280214ff:~/alx-zero_day/0x03-git# git push origin master
+Username for 'https://github.com': trevor-gituru
+Password for 'https://trevor-gituru@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 374 bytes | 374.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/trevor-gituru/alx-zero_day.git
+   e4c442d..ed88df0  master -> master
+root@a710280214ff:~/alx-zero_day/0x03-git# 
 ```
  
-### 
+### 5. HAAA what did you do???
+![Advanced](https://img.shields.io/badge/Advanced-F05032?style=flat)
+
+Collaboration is cool, but not really when you update the same file at the same time…
+
+To illustrate that, please merge the branch `update_script` to `main`: “Cool, all my changes will be now part of the main branch, ready to be deployed!”
+
+HHHHHHHAAAAAAAA
+
+```bash
+root@a710280214ff:~/alx-zero_day/0x03-git# git checkout update_script
+Switched to branch 'update_script'
+root@a710280214ff:~/alx-zero_day/0x03-git# git merge master
+Removing 0x03-git/js/main.js
+Removing 0x03-git/js/index.js
+Auto-merging 0x03-git/bash/alx
+CONFLICT (content): Merge conflict in 0x03-git/bash/alx
+Automatic merge failed; fix conflicts and then commit the result.
+root@a710280214ff:~/alx-zero_day/0x03-git# 
+
+
+```
+
+As you can see, you have conflicts between two branches on the same file.
+
+Your goal now is to resolve conflicts by using the version of the branch update_script, and push the result to the origin.
+
+At the end, you should have all your work from the branch update_script (new file and two updated files) and all latest main commits (new files, delete folder, etc.), without conflicts.
+```bash
+
+```
 ### 
 
 ## Resources
