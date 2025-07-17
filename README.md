@@ -54,8 +54,8 @@ This repository marks the beginning of my journey through ALX Software Engineeri
 
 ## Author
 
-- GitHub: [razaoul](https://github.com/razaoul)
-- ALX Student, Class of 2025
+- GitHub: [trevor-gituru](https://github.com/trevor-gituru)
+- ALX Student, Class of 2024
 
 ## License
 
