@@ -1,7 +1,7 @@
 # 0x00. Shell, navigation
 
-![Shell](https://img.shields.io/badge/Shell-6f42c1?style=flat&logo=visualstudio&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-6f42c1?style=flat&logo=visualstudio&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-121011?style=flat&logo=gnubash&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
 ##  Concepts Learnt
 ### Commands

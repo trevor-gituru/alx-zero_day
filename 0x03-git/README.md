@@ -160,8 +160,8 @@ root@a710280214ff:~/alx-zero_day/0x03-git# git commit -m "Starting to code today
  create mode 100644 0x03-git/js/index.js
  create mode 100644 0x03-git/js/main.js
 root@a710280214ff:~/alx-zero_day/0x03-git# git push
-Username for 'https://github.com': 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
-Password for 'https://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@github.com': 
+Username for 'https://github.com': <PAT>
+Password for 'https://<PAT>@github.com': 
 Enumerating objects: 11, done.
 Counting objects: 100% (11/11), done.
 Delta compression using up to 2 threads
@@ -214,8 +214,8 @@ root@a710280214ff:~/alx-zero_day/0x03-git# git commit -m "My personal work"
  3 files changed, 2 insertions(+), 2 deletions(-)
  create mode 100644 0x03-git/bash/98
 root@a710280214ff:~/alx-zero_day/0x03-git# git push origin update_script
-Username for 'https://github.com': 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
-Password for 'https://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@github.com': 
+Username for 'https://github.com': <PAT> 
+Password for 'https://<PAT>@github.com': 
 Enumerating objects: 11, done.
 Counting objects: 100% (11/11), done.
 Delta compression using up to 2 threads
